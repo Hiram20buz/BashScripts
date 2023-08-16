@@ -1,1 +1,20 @@
-IyEvYmluL2Jhc2gKZmF0aGVyPSIkKHB3ZCkiCgpmdW5ueSgpewpyZWFkIGRpckFjdCBjb21hbjIgY29tYW4zCmVjaG8gIk9yaWdpbjoiJGZhdGhlcgoKY2QgJGRpckFjdApsb2NhbCB4PSIkKHB3ZCkiCgplY2hvICJOT1c6IiR4CgplY2hvICIkKCRjb21hbjIgJGNvbWFuMyApIgoKfQoKd2hpbGUgOgpkbwpmdW5ueQpkb25l
+#!/bin/bash
+father="$(pwd)"
+
+funny(){
+read dirAct coman2 coman3
+echo "Origin:"$father
+
+cd $dirAct
+local x="$(pwd)"
+
+echo "NOW:"$x
+
+echo "$($coman2 $coman3 )"
+
+}
+
+while :
+do
+funny
+done
